@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>random doggos</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <h1>Doggos app</h1><br>
+            <div class="container-logo">
+                <img class="nav-logo" src="https://c1.klipartz.com/pngpicture/616/998/sticker-png-arrows-icon-loop-icon-process-icon-round-icon-text-logo-symbol-blackandwhite.png" alt="logo">
+            </div>
+        </nav>
+        <spam class="error"> </spam>
+        
+        
+        <section class="container-dogs">
+             <figure>
+            <img id="img1" alt="">
+            <button class="add-favorites-btn" id="btn1">Love it!</button>
+            </figure>
+            <figure>
+                <img id="img2" alt="">
+            <button class="add-favorites-btn" id="btn2">Love it!</button> 
+            </figure>
+            <figure>
+                <img id="img3" alt="">
+            <button class="add-favorites-btn"id="btn3">Love it!</button>
+            </figure>
+            <figure>
+                <img id="img4" alt="">
+            <button  class="add-favorites-btn"id="btn4">Love it!</button>
+            </figure>
+            <figure>
+            <img id="img5" alt="">
+            <button class="add-favorites-btn"id="btn5">Love it!</button>
+            <!-- <figcaption>Images from thedogapi.com</figcaption> -->
+        </figure>
+        </section>
+       <div class="container-btn">
+        
+        <button id="get-a-dog">
+            <img src="" alt="refresh">
+        </button><br>
+        <span id="saved"></span>
+       </div>
+
+       <section id="uploadDoggo">
+        <h2>Upload a Doggo</h2>
+
+        <form id="uploadForm">
+            <input type="file" name="file" id="file" onchange="previewImage()"><br>
+            <img id="imagePreview" alt="Image preview">
+            <button type="button" id="uploadBtn">Upload a Doggo</button>
+            <span id="upload"></span>
+        </form>
+       </section>
+        
+
+        <section id="favoriteDoggos">
+        
+            
+        </section>
+        <span id="deleted"></span>
+    </main>
+    <footer>
+        <nav>
+            <div class="footer-img-container">
+                <img src="" alt="github" class="footer-img">
+                <img src="" alt="instagram" class="footer-img">
+                <img src="" alt="twitter" class="footer-img">
+            </div>
+        </nav>
+    </footer>
+    <script src="src/key.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>
