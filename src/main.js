@@ -16,9 +16,9 @@ const spanSave = document.querySelector('#saved');
 const spanDelete = document.querySelector('#deleted');
 const spanUpload = document.querySelector('#upload');
 
-/* const filePreview = document.getElementById('file').files[0];
-  filePreview.addEventListener('change', previewImage)
- */
+// const filePreview = document.getElementById('file').files[0];
+//   filePreview.addEventListener('change', () => {previewImage})
+ 
 
 
 async function randomDogs () {
@@ -88,6 +88,7 @@ async function loadFavouritesDogs () {
 
     data.forEach(doggo => {
       const figure = document.createElement('figure');
+      figure.classList.add('favoriteDoggos-img-container')
       const img = document.createElement('img')
       const btn = document.createElement('button');
       const btnText = document.createTextNode('X');
