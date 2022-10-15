@@ -18,13 +18,20 @@ nav {
     display: flex;
     justify-content: center;
     align-content: center;
+    height: 16vh;
     padding-top: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
-.nav-logo {
-    width: 10px;
-    height: 10px;
+.container-logo {
+  background: url('./white-icons/doggo-logo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 40px;
+  width: 50px;
+  height: 50px;
 }
+
 .container-dogs {
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +45,7 @@ figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    padding-top: 12px;
     border-top-right-radius: 48px;
     border-bottom-left-radius: 48px;
 }
@@ -48,7 +55,7 @@ figure {
     object-fit: cover;
     border-top-right-radius: 36px;
     border-bottom-left-radius: 36px;
-    margin: 20px;
+    margin: 0 auto;
  }
  .container-btn {
     margin: 20px;
@@ -76,20 +83,27 @@ figure {
  }
 #get-a-dog {
     background-color: blueviolet;
-    color: antiquewhite;
-    padding: 16px;
-    border-radius: 44px;
-    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 8px;
+    border-radius: 50%;
+  }
+  .get-a-dog-icon {
+    background: url('./white-icons/refresh-icon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
   }
    #uploadDoggo {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: rgba(70, 118, 160, 0.551);
-        /* width: 300px;
-        height: 100px; */
+        background-color: #4676a08d;
         width: auto;
+        height: auto;
         padding: 8px;
         margin: 5% 40%;
         border-top-right-radius: 24px;
@@ -98,8 +112,8 @@ figure {
         
     }
     #uploadDoggo:hover {
-        margin: 5% 30%;
-        box-shadow: 1px 1px #98ca3f;
+        /* margin: 5% 30%; */
+        box-shadow: 8px 8px #98ca3f;
     }
   h2 {
     margin: 20px;
@@ -119,17 +133,28 @@ figure {
         margin: 24px;
     
   }
+
+  .favoriteDoggos-img-container {
+    background-color: #496ead;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-top-right-radius: 48px;
+    border-bottom-left-radius: 48px;
+  }
   #remove-btn {
     background-color: rgb(210, 207, 207);
-    padding: 4px 4px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    padding: 4px;
+    margin-top: 20px;
+    margin-left: 12px;
     font-weight: bolder;
     border: transparent;
-    border-radius: 50px;
+    border-radius: 50%;
     cursor: pointer;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     font-size: 1.6rem;
   }
   #remove-btn:hover {
