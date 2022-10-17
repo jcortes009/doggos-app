@@ -8,13 +8,15 @@
     font-family: 'Shadows Into Light', cursive, Helvetica;
  }
  body {
-    background-color: #121f3d;
+    background-color: #171b25;
  }
 main {
     width: 100%;
 }
 h1 {
-  font-size: 2.4rem;
+  font-size: 3.0rem;
+  font-weight: 600;
+  color: antiquewhite;
 }
 ul {
   list-style: none;
@@ -77,14 +79,16 @@ figure {
     border: transparent;
     border-radius: 12px;
     cursor: pointer;
-    font-size: 2.0rem;
+    font-size: 2.6rem;
     font-family: 'Shadows Into Light', cursive, Helvetica;
  }
 
  .add-favorites-btn:hover {
     background-color: rgb(233, 221, 221);
+    color: #98ca3f;
     /* content: '😍'; */
  }
+ 
 #get-a-dog {
     background-color: blueviolet;
     display: flex;
@@ -133,16 +137,25 @@ figure {
       border-radius: 0;
    }
    #uploadBtn {
-    width: 32px;
-    height: 38px;
+    background-color: #98ca3f;
+    width: 42px;
+    height: 45px;
     border-radius: 50%;
+    border-color: transparent;
     font-size: 3.0rem;
-    color: black;
+    font-weight: 900;
+    color: antiquewhite;
     
+   }
+   #uploadBtn:hover {
+    background-color: antiquewhite;
+    color: #98ca3f;
    }
     
   h2 {
+    font-size: 2.4rem;
     margin: 8px;
+    color: antiquewhite;
   }
   #h2-favorites-container {
     background-color:#496ead ;
@@ -152,6 +165,8 @@ figure {
     margin-right: 50%;
     margin-bottom: 32px;
   }
+
+  
   #favoriteDoggos {
         display: flex;
         flex-wrap: wrap;
@@ -173,7 +188,6 @@ figure {
   }
   #remove-btn {
     background-color: rgb(210, 207, 207);
-    padding: 4px;
     margin-top: 20px;
     margin-left: 12px;
     font-weight: bolder;
@@ -182,13 +196,16 @@ figure {
     cursor: pointer;
     width: 50px;
     height: 50px;
-    font-size: 1.6rem;
+    color: black;
+    font-size: 2.4rem;
+    font-weight: 900;
   }
   #remove-btn:hover {
     background-color: red;
     border: 2px solid white;
     color: white;
   }
+  
   .footer-logo-container {
     background-color: #496ead;
     display: flex;
