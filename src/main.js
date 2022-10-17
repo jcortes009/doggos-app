@@ -185,9 +185,9 @@ async function uploadDoggoPicture () {
 
 }
  function previewImage () {
-  const IMG = document.querySelector('#imagePreview');
+  const IMG = document.querySelector('#newDogPreview');
   const reader = new FileReader();
-  const filePreview = document.querySelector('#file').files[0];
+  const filePreview = document.querySelector('#newFile').files[0];
   reader.addEventListener('load', () => {
 
     IMG.src = reader.result; }, false);
