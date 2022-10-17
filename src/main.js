@@ -128,7 +128,6 @@ async function saveFavouritesDogs (id) {
     spanError.textContent = `Ooops! There is an error: ${response.status} hmm...${data.error}`
     console.log('Not not');
   } else {
-    spanSave.textContent = `Added to my favorites`
     loadFavouritesDogs();
     console.log('saved');
   }
@@ -150,7 +149,7 @@ async function deleteFavouritesDogs (id) {
     spanError.textContent = `Ooops! There is an error: ${response.status} hmm...${data.error}`
     console.log('Not not');
   } else {
-    spanDelete.textContent = `Deleted from my favorites`
+    
     loadFavouritesDogs();
     console.log('Deleted');
   }
