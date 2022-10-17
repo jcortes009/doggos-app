@@ -1,1 +1,0 @@
-// create a file called key.js and create a const API_KEY = "your own api key";
