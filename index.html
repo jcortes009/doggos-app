@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <title>random doggos</title>
 </head>
@@ -53,9 +56,9 @@
         <h2>Upload a Doggo</h2>
 
         <form id="uploadForm">
-            <input type="file" name="file" id="file" ><br>
-            <img id="imagePreview" alt="Image preview">
-            <button type="button" id="uploadBtn">Upload a Doggo</button>
+            <input type="file" name="file" id="newFile" onchange="previewImage()" ><br>
+            <img id="newDogPreview" alt="New Dog">
+            <button type="button" id="uploadBtn">+</button>
             <span id="upload"></span>
         </form>
        </section>
@@ -66,16 +69,15 @@
             
         </section>
         <span id="deleted"></span>
+        <footer>
+            <ul class="footer-logo-container">
+                <li class="footer-logo">
+                    <a href="/"><img src="./style/white-icons/github-icon-whitepng.png" alt="github icon"></a>
+                </li>
+            </ul>
+        </footer>
     </main>
-    <footer>
-        <nav>
-            <div class="footer-img-container">
-                <img src="" alt="github" class="footer-img">
-                <!-- <img src="" alt="instagram" class="footer-img">
-                <img src="" alt="twitter" class="footer-img"> -->
-            </div>
-        </nav>
-    </footer>
+    
     <script src="src/key.js"></script>
     <script src="src/main.js"></script>
 </body>
